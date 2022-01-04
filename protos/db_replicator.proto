@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package db_replicator;
+
+service DB_Replicator {
+  rpc Receiver(stream Sender) returns (Response) {}
+}
+
+message Sender {
+  string data = 1;
+}
+
+message Response {
+  string response = 1;
+}

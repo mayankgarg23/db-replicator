@@ -1,0 +1,8 @@
+grpcio
+grpcio-tools
+grpc_requests
+psycopg2
+configparser
+pymongo
+pymongo[srv]
+dnspython
